@@ -1,11 +1,11 @@
 <script>
 import Card from "./components/Card.vue";
-import Audio from "./components/Audio.vue";
+
 export default {
   name: "App",
   components: {
     Card,
-    Audio,
+ 
   },
 
   data() {

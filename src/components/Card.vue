@@ -1,3 +1,24 @@
+<script>
+export default {
+  name: "Card",
+  data() {
+    return {
+      activo: "",
+    };
+  },
+  props: {
+    titulo: String,
+    artista: String,
+    imge: String,
+    audio: String,
+    tipo: String,
+    tracks: String,
+    albums: String,
+    fans: String,
+  },
+};
+</script>
+
 <template>
   <a href="#" class="btn" @click="this.activo = 'si'" title="escuchar/ ver">
     <div class="card" style="width: 10rem">
@@ -94,26 +115,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "Card",
-  data() {
-    return {
-      activo: "",
-    };
-  },
-  props: {
-    titulo: String,
-    artista: String,
-    imge: String,
-    audio: String,
-    tipo: String,
-    tracks: String,
-    albums: String,
-    fans: String,
-  },
-};
-</script>
 <style>
 q {
   text-align: right;
